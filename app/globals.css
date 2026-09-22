@@ -100,3 +100,29 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 .footer-bottom { align-items: center; color: #aab2ba; display: flex; font-size: 11px; gap: 30px; justify-content: space-between; letter-spacing: .08em; padding-top: 20px; text-transform: uppercase; }
 .footer-bottom img { height: 42px; object-fit: cover; width: 112px; }
 @media (max-width: 720px) { .site-header { height: 72px; padding: 0 20px; } .brand-mark img { height: 52px; width: 100px; } .menu-toggle { display: block; position: relative; z-index: 3; } .main-nav { align-items: flex-start; background: var(--cream); flex-direction: column; gap: 24px; inset: 72px 0 auto; max-height: 0; opacity: 0; overflow: hidden; padding: 0 24px; pointer-events: none; position: absolute; transform: translateY(-8px); transition: max-height .25s ease, opacity .2s ease, padding .25s ease, transform .25s ease; } .main-nav.is-open { max-height: 400px; opacity: 1; padding: 30px 24px 35px; pointer-events: auto; transform: translateY(0); } .nav-cta { margin-top: 8px; } .hero { min-height: 680px; padding: 135px 24px 85px; } .hero-image { object-position: 62% center; } .hero-note { bottom: 25px; left: 24px; right: auto; } .intro-grid, .section-heading, .tradition, .product-grid, .partner-grid, .footer-top { grid-template-columns: 1fr; } .section-pad { padding: 78px 24px; } .section-kicker { margin-bottom: 42px; } .image-pair { gap: 12px; margin-top: 48px; } .image-pair img { height: 220px; } .image-pair img:last-child { margin-top: 32px; } .tradition-image img { height: 360px; } .full-bleed-band { min-height: 500px; } .product-image { height: 300px; } .section-heading { gap: 0; margin-bottom: 45px; } .story { min-height: 620px; } .story > img { object-position: 60% center; } .partner-card img { height: 155px; } .media-grid { gap: 38px; grid-template-columns: 1fr; } .media-heading { max-width: none; } .footer-top { align-items: start; padding-bottom: 45px; } .footer-bottom { align-items: start; flex-direction: column; gap: 14px; } }
+
+/* Heritage / chiefs & kings */
+.heritage { background: var(--cream); display: grid; gap: clamp(48px, 7vw, 110px); grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr); align-items: center; }
+.heritage-copy { max-width: 610px; }
+.heritage-copy > p:not(.eyebrow) { color: var(--muted); font-size: 16px; line-height: 1.72; margin-bottom: 18px; }
+.heritage-quote { border-left: 2px solid var(--warm); color: var(--ink); font: italic 23px/1.38 Georgia, 'Times New Roman', serif; margin-top: 30px; padding-left: 20px; }
+.heritage-visual { margin: 0; min-width: 0; }
+.heritage-visual > img { display: block; width: 100%; aspect-ratio: 1.68 / 1; object-fit: cover; object-position: center; }
+.heritage-visual figcaption { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; color: var(--ink); font: 15px/1.35 Georgia, 'Times New Roman', serif; padding-top: 14px; text-align: center; }
+.heritage-visual figcaption span { position: relative; padding-bottom: 13px; }
+.heritage-visual figcaption span:after { background: var(--warm); bottom: 0; content: ''; height: 1px; left: 50%; position: absolute; transform: translateX(-50%); width: 34px; }
+
+@media (max-width: 900px) {
+  .heritage { grid-template-columns: 1fr; }
+  .heritage-copy { max-width: 680px; }
+  .heritage-visual { max-width: 760px; width: 100%; }
+}
+
+@media (max-width: 720px) {
+  .heritage { gap: 38px; padding-bottom: 84px; padding-top: 84px; }
+  .heritage h2 { font-size: clamp(43px, 13vw, 58px); margin-bottom: 24px; }
+  .heritage-copy > p:not(.eyebrow) { font-size: 15px; line-height: 1.68; }
+  .heritage-quote { font-size: 20px; margin-top: 26px; }
+  .heritage-visual > img { aspect-ratio: 1.28 / 1; }
+  .heritage-visual figcaption { font-size: 13px; gap: 10px; }
+}

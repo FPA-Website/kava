@@ -16,6 +16,7 @@ const images = {
   fpa: "/img/fpa.png",
   enervite: "/img/enervite.jpg",
   member: "/img/fpagroup.jpg",
+  heritage: "/img/chiefs-kings-heritage.png",
 };
 
 const navItems = [
@@ -161,6 +162,42 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="heritage section-pad" aria-labelledby="heritage-title">
+        <div className="heritage-copy">
+          <p className="eyebrow">A tradition of honour</p>
+          <h2 id="heritage-title">
+            A drink of<br />
+            <em>chiefs &amp; kings.</em>
+          </h2>
+          <p>
+            For generations across the Pacific, kava has carried a significance
+            far beyond the drink itself. In 19th-century Fiji, yaqona was
+            reserved for chiefs and priests as part of important ceremonies —
+            a tradition deeply connected with leadership, respect and community.
+          </p>
+          <p>
+            That ceremonial tradition has continued to welcome distinguished
+            guests and royalty. Queen Elizabeth II took part in a traditional
+            kava ceremony during her 1953 visit to Fiji, while King Charles III
+            was welcomed to Samoa with a Royal ‘Ava Ceremony in 2024.
+          </p>
+          <div className="heritage-quote">
+            “From the bowls of chiefs to royal ceremonies — a tradition of
+            honour that lives on.”
+          </div>
+        </div>
+        <figure className="heritage-visual">
+          <img
+            src={images.heritage}
+            alt="Editorial illustration inspired by royal kava ceremonies"
+          />
+          <figcaption>
+            <span>Queen Elizabeth II · Fiji, 1953</span>
+            <span>King Charles III · Samoa, 2024</span>
+          </figcaption>
+        </figure>
+      </section>
+
       <section className="full-bleed-band">
         <img
           src={images.ceremony}
@@ -235,7 +272,8 @@ export default function Page() {
           <p>
             Our story began on the island of Espiritu Santo, where a shared bowl
             and an invitation from the village chief became the beginning of a
-            lifelong friendship.
+            lifelong friendship. Rooted in Vanuatu, Kava King honours the
+            communities that have cultivated, prepared and shared kava for generations.
           </p>
           <a className="button button-light" href="#contact">
             Read our story <ArrowUpRight size={17} />
