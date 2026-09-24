@@ -79,7 +79,9 @@ export default function Page() {
             <em>Friends of the Village Chief in Vanuatu.</em> */}
           </h1>
           <p className="hero-copy">
-          Kava Kava has played an important bonding role in the South Pacific island villages for thousands of years. Kava is valued for helping create good feelings between people
+            Kava Kava has played an important bonding role in the South Pacific
+            island villages for thousands of years. Kava is valued for helping
+            create good feelings between people
           </p>
           <a className="button button-light" href="#about">
             Discover kava <ArrowDown size={17} />
@@ -162,18 +164,22 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="heritage section-pad" aria-labelledby="heritage-title">
+      <section
+        className="heritage section-pad"
+        aria-labelledby="heritage-title"
+      >
         <div className="heritage-copy">
           <p className="eyebrow">A tradition of honour</p>
           <h2 id="heritage-title">
-            A drink of<br />
+            A drink of
+            <br />
             <em>chiefs &amp; kings.</em>
           </h2>
           <p>
             For generations across the Pacific, kava has carried a significance
             far beyond the drink itself. In 19th-century Fiji, yaqona was
-            reserved for chiefs and priests as part of important ceremonies —
-            a tradition deeply connected with leadership, respect and community.
+            reserved for chiefs and priests as part of important ceremonies — a
+            tradition deeply connected with leadership, respect and community.
           </p>
           <p>
             That ceremonial tradition has continued to welcome distinguished
@@ -238,7 +244,10 @@ export default function Page() {
               <span>Daily ritual 20*4.5g/SACHET</span>
               <h3>Kalmer Kava</h3>
               <p>Ginger Tea Beverage</p>
-              <a className="text-link" href="https://enervite.com.au/products/kalmer-kava-ginger-flavour-20-sachets">
+              <a
+                className="text-link"
+                href="https://enervite.com.au/products/kalmer-kava-ginger-flavour-20-sachets"
+              >
                 Learn more <ArrowUpRight size={16} />
               </a>
             </div>
@@ -251,7 +260,10 @@ export default function Page() {
               <span>Daily ritual 20*4.5g/SACHET</span>
               <h3>Kalmer Kava</h3>
               <p>Lemon Tea Beverage</p>
-              <a className="text-link" href="https://enervite.com.au/products/kalmer-kava-lemon-flavour-20-sachets">
+              <a
+                className="text-link"
+                href="https://enervite.com.au/products/kalmer-kava-lemon-flavour-20-sachets"
+              >
                 Learn more <ArrowUpRight size={16} />
               </a>
             </div>
@@ -273,7 +285,8 @@ export default function Page() {
             Our story began on the island of Espiritu Santo, where a shared bowl
             and an invitation from the village chief became the beginning of a
             lifelong friendship. Rooted in Vanuatu, Kava King honours the
-            communities that have cultivated, prepared and shared kava for generations.
+            communities that have cultivated, prepared and shared kava for
+            generations.
           </p>
           <a className="button button-light" href="#contact">
             Read our story <ArrowUpRight size={17} />
@@ -296,16 +309,28 @@ export default function Page() {
         </div>
         <div className="partner-grid">
           <div className="partner-card">
-            <a href="https://www.ferngrovepharma.com.au" target="_blank" rel="noreferrer"><img src={images.fpa} alt="Ferngrove Pharmaceuticals Australia" />
-            <h3>Ferngrove Pharmaceuticals</h3></a>
+            <a
+              href="https://www.ferngrovepharma.com.au"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={images.fpa} alt="Ferngrove Pharmaceuticals Australia" />
+              <h3>Ferngrove Pharmaceuticals</h3>
+            </a>
             <p>
               Our TGA-licensed Australian manufacturing partner for
               complementary medicine and health food products.
             </p>
           </div>
           <div className="partner-card">
-          <a href="https://www.enervite.com.au" target="_blank" rel="noreferrer"><img src={images.enervite} alt="Enervite" />
-            <h3>Enervite</h3></a>
+            <a
+              href="https://www.enervite.com.au"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={images.enervite} alt="Enervite" />
+              <h3>Enervite</h3>
+            </a>
             <p>
               Committed to creating effective nutritional formulas that help
               people live with energy and vitality.
@@ -326,7 +351,7 @@ export default function Page() {
           <div className="media-player">
             <div className="video-frame">
               <iframe
-                src="https://www.youtube.com/embed/ZTojMvGr41I"
+                src="https://www.youtube.com/embed/KkvPQNbyLQs"
                 title="Kava King video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -335,7 +360,7 @@ export default function Page() {
             </div>
             <a
               className="text-link"
-              href="https://youtu.be/VpkM5nVr37E"
+              href="https://youtu.be/KkvPQNbyLQs"
               target="_blank"
               rel="noreferrer"
             >
@@ -355,7 +380,15 @@ export default function Page() {
             Get in touch <ArrowUpRight size={17} />
           </a> */}
           <div>
-            <h3 style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#f3b23f" }}>Get in touch:</h3>
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: "bold",
+                color: "#f3b23f",
+              }}
+            >
+              Get in touch:
+            </h3>
             <p>Email: info@hsa-group.com.au </p>
             <p>Phone: +61 0296 443 358 </p>
           </div>
@@ -364,10 +397,11 @@ export default function Page() {
           <span>© {new Date().getFullYear()} Kava King</span>
           <span>Made with respect for tradition</span>
           <a href="https://fpa.group/en/" target="_blank" rel="noreferrer">
-          <img
-            src={images.member}
-            alt="Member of FPA Group, established 1990"
-          /></a>
+            <img
+              src={images.member}
+              alt="Member of FPA Group, established 1990"
+            />
+          </a>
         </div>
       </footer>
     </main>
